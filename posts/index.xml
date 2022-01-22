@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on tsukumotan blog</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on tsukumotan blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 22 Jan 2022 21:08:57 +0900</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022/01/22　ブログを開設</title>
+      <link>/posts/20220122/</link>
+      <pubDate>Sat, 22 Jan 2022 21:08:57 +0900</pubDate>
+      
+      <guid>/posts/20220122/</guid>
+      <description>2022/01/22 マジでやることがないので日記をつけ始めることにする。 静的サイトジェネレーターのHugoで作ってgithub pagesでホストする。
+知らん人の興味ない投稿が勝手に表示されたりいらん広告勝手に表示されるTwitterとかいうやつやめてみんなで個人サイトを開設しないか？相互リンク募集中です。
+ブログの構築 簡単に Hugo サイトを GitHub Pages で（ 自動ビルドして ）公開する方法
+これを参考に自動でサイトをビルドしてくれるようにしようと思う。
+と思っていたのだが、めんどくさくなったので記事を書く→ビルド→githubにプッシュまでを一つのコマンドにまとめる程度にしておく。とりあえずはメインPCからしか更新できなくなるけど、まあこれでいい。どうせそのうち飽きて更新しなくなるので。</description>
+    </item>
+    
+  </channel>
+</rss>
