@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on tsukumotan blog</title>
-    <link>https://tkmtn.github.io/blog/posts/</link>
+    <link>https://tkmtn.github.io/posts/</link>
     <description>Recent content in Posts on tsukumotan blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 22 Jan 2022 21:08:57 +0900</lastBuildDate><atom:link href="https://tkmtn.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jan 2022 21:08:57 +0900</lastBuildDate><atom:link href="https://tkmtn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2022/01/22　ブログを開設</title>
-      <link>https://tkmtn.github.io/blog/posts/20220122/</link>
+      <link>https://tkmtn.github.io/posts/20220122/</link>
       <pubDate>Sat, 22 Jan 2022 21:08:57 +0900</pubDate>
       
-      <guid>https://tkmtn.github.io/blog/posts/20220122/</guid>
+      <guid>https://tkmtn.github.io/posts/20220122/</guid>
       <description>2022/01/22 マジでやることがないので日記をつけ始めることにする。 静的サイトジェネレーターのHugoで作ってgithub pagesでホストする。
 知らん人の興味ない投稿が勝手に表示されたりいらん広告勝手に表示されるTwitterとかいうやつやめてみんなで個人サイトを開設しないか？相互リンク募集中です。
 ブログの構築 簡単に Hugo サイトを GitHub Pages で（ 自動ビルドして ）公開する方法
