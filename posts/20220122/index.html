@@ -14,7 +14,15 @@
 これを参考に自動でサイトをビルドしてくれるようにしようと思う。
 と思っていたのだが、めんどくさくなったので記事を書く→ビルド→githubにプッシュまでを一つのコマンドにまとめる程度にしておく。とりあえずはメインPCからしか更新できなくなるけど、まあこれでいい。どうせそのうち飽きて更新しなくなるので。
 方針変更 本当はWSL上でやるつもりだったんだけど、なんかWSL上のhugoだとプレビューがうまく行かなかったのでWindowsにHugo入れてやることに。
-Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうまく表示されん。謎。" />
+Hugo 静的サイトジェネレーターによるサイト構築と公開
+これを参考に環境構築。 Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうまく表示されん。謎。
+↓
+解決。
+【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】
+このせいだった。この場合は、config.tomlのbaseURLを
+baseurl = &quot;https://tkmtn.github.io/&quot; とすることで解決した。
+ビルドとpushの手順  コンテンツをつくる hugo -Dでビルド Sourcetreeでcommit, push  正直めんどい
+ビルドからpushまで自動化したい、気が向いたら" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tkmtn.github.io/posts/20220122/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-01-22T21:08:57+09:00" />
@@ -28,9 +36,17 @@ Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうま�
 これを参考に自動でサイトをビルドしてくれるようにしようと思う。
 と思っていたのだが、めんどくさくなったので記事を書く→ビルド→githubにプッシュまでを一つのコマンドにまとめる程度にしておく。とりあえずはメインPCからしか更新できなくなるけど、まあこれでいい。どうせそのうち飽きて更新しなくなるので。
 方針変更 本当はWSL上でやるつもりだったんだけど、なんかWSL上のhugoだとプレビューがうまく行かなかったのでWindowsにHugo入れてやることに。
-Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうまく表示されん。謎。"><meta itemprop="datePublished" content="2022-01-22T21:08:57+09:00" />
+Hugo 静的サイトジェネレーターによるサイト構築と公開
+これを参考に環境構築。 Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうまく表示されん。謎。
+↓
+解決。
+【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】
+このせいだった。この場合は、config.tomlのbaseURLを
+baseurl = &quot;https://tkmtn.github.io/&quot; とすることで解決した。
+ビルドとpushの手順  コンテンツをつくる hugo -Dでビルド Sourcetreeでcommit, push  正直めんどい
+ビルドからpushまで自動化したい、気が向いたら"><meta itemprop="datePublished" content="2022-01-22T21:08:57+09:00" />
 <meta itemprop="dateModified" content="2022-01-22T21:08:57+09:00" />
-<meta itemprop="wordCount" content="19">
+<meta itemprop="wordCount" content="39">
 <meta itemprop="keywords" content="" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -105,6 +121,7 @@ Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうま�
     <li><a href="#ブログの構築">ブログの構築</a>
       <ul>
         <li><a href="#方針変更">方針変更</a></li>
+        <li><a href="#ビルドとpushの手順">ビルドとpushの手順</a></li>
       </ul>
     </li>
   </ul>
@@ -121,7 +138,23 @@ Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうま�
 <p>と思っていたのだが、めんどくさくなったので記事を書く→ビルド→githubにプッシュまでを一つのコマンドにまとめる程度にしておく。とりあえずはメインPCからしか更新できなくなるけど、まあこれでいい。どうせそのうち飽きて更新しなくなるので。</p>
 <h3 id="方針変更">方針変更</h3>
 <p>本当はWSL上でやるつもりだったんだけど、なんかWSL上のhugoだとプレビューがうまく行かなかったのでWindowsにHugo入れてやることに。</p>
-<p>Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうまく表示されん。謎。</p>
+<p><a href="https://www.pc-koubou.jp/magazine/30737#section03-03">Hugo 静的サイトジェネレーターによるサイト構築と公開</a></p>
+<p>これを参考に環境構築。
+Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうまく表示されん。謎。</p>
+<p>↓</p>
+<p>解決。</p>
+<p><a href="https://www.nyamucoro.com/entry/2019/05/19/010423">【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】</a></p>
+<p>このせいだった。この場合は、config.tomlのbaseURLを</p>
+<pre tabindex="0"><code>baseurl = &quot;https://tkmtn.github.io/&quot;
+</code></pre><p>とすることで解決した。</p>
+<h3 id="ビルドとpushの手順">ビルドとpushの手順</h3>
+<ol>
+<li>コンテンツをつくる</li>
+<li><code>hugo -D</code>でビルド</li>
+<li>Sourcetreeでcommit, push</li>
+</ol>
+<p>正直めんどい</p>
+<p>ビルドからpushまで自動化したい、気が向いたら</p>
 
 		</div>
 	</article>

@@ -94,7 +94,15 @@
 これを参考に自動でサイトをビルドしてくれるようにしようと思う。
 と思っていたのだが、めんどくさくなったので記事を書く→ビルド→githubにプッシュまでを一つのコマンドにまとめる程度にしておく。とりあえずはメインPCからしか更新できなくなるけど、まあこれでいい。どうせそのうち飽きて更新しなくなるので。
 方針変更 本当はWSL上でやるつもりだったんだけど、なんかWSL上のhugoだとプレビューがうまく行かなかったのでWindowsにHugo入れてやることに。
-Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうまく表示されん。謎。
+Hugo 静的サイトジェネレーターによるサイト構築と公開
+これを参考に環境構築。 Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうまく表示されん。謎。
+↓
+解決。
+【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】
+このせいだった。この場合は、config.tomlのbaseURLを
+baseurl = &quot;https://tkmtn.github.io/&quot; とすることで解決した。
+ビルドとpushの手順  コンテンツをつくる hugo -Dでビルド Sourcetreeでcommit, push  正直めんどい
+ビルドからpushまで自動化したい、気が向いたら
 	</div>
 </article>
 </main>
