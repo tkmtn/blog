@@ -20,11 +20,11 @@ Hugo 静的サイトジェネレーターによるサイト構築と公開
 解決。
 【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】
 このせいだった。この場合は、config.tomlのbaseURLを
-baseurl = &quot;https://tkmtn.github.io/&quot; とすることで解決した。
+baseurl = &quot;https://tkmtn.github.io/blog&quot; とすることで解決したと思ったんだけど、だめだった。トップページ以外のCSSが読み込まれない。
 ビルドとpushの手順  コンテンツをつくる hugo -Dでビルド Sourcetreeでcommit, push  正直めんどい
 ビルドからpushまで自動化したい、気が向いたら" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://tkmtn.github.io/posts/20220122/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://tkmtn.github.io/blog/posts/20220122/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-01-22T21:08:57+09:00" />
 <meta property="article:modified_time" content="2022-01-22T21:08:57+09:00" />
 
@@ -42,7 +42,7 @@ Hugo 静的サイトジェネレーターによるサイト構築と公開
 解決。
 【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】
 このせいだった。この場合は、config.tomlのbaseURLを
-baseurl = &quot;https://tkmtn.github.io/&quot; とすることで解決した。
+baseurl = &quot;https://tkmtn.github.io/blog&quot; とすることで解決したと思ったんだけど、だめだった。トップページ以外のCSSが読み込まれない。
 ビルドとpushの手順  コンテンツをつくる hugo -Dでビルド Sourcetreeでcommit, push  正直めんどい
 ビルドからpushまで自動化したい、気が向いたら"><meta itemprop="datePublished" content="2022-01-22T21:08:57+09:00" />
 <meta itemprop="dateModified" content="2022-01-22T21:08:57+09:00" />
@@ -53,10 +53,10 @@ baseurl = &quot;https://tkmtn.github.io/&quot; とすることで解決した。
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="stylesheet" href="/blog/css/style.css">
+	<link rel="stylesheet" href="/blog/css/custom.css">
 
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="/blog/favicon.ico">
 		
 </head>
 <body class="body">
@@ -65,9 +65,9 @@ baseurl = &quot;https://tkmtn.github.io/&quot; とすることで解決した。
 	<div class="container header__container">
 		
 	<div class="logo logo--mixed">
-		<a class="logo__link" href="/" title="tsukumotan blog" rel="home">
+		<a class="logo__link" href="/blog" title="tsukumotan blog" rel="home">
 			<div class="logo__item logo__imagebox">
-					<img class="logo__img" src="/img/mirei.png">
+					<img class="logo__img" src="/blog/img/mirei.png">
 				</div><div class="logo__item logo__text">
 					<div class="logo__title">tsukumotan blog</div>
 					<div class="logo__tagline">特になし</div>
@@ -81,14 +81,14 @@ baseurl = &quot;https://tkmtn.github.io/&quot; とすることで解決した。
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/">
+			<a class="menu__link" href="/blog/">
 				
 				<span class="menu__text">ホーム</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/posts/">
+			<a class="menu__link" href="/blog/posts/">
 				
 				<span class="menu__text">投稿一覧</span>
 				
@@ -145,8 +145,8 @@ Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうま�
 <p>解決。</p>
 <p><a href="https://www.nyamucoro.com/entry/2019/05/19/010423">【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】</a></p>
 <p>このせいだった。この場合は、config.tomlのbaseURLを</p>
-<pre tabindex="0"><code>baseurl = &quot;https://tkmtn.github.io/&quot;
-</code></pre><p>とすることで解決した。</p>
+<pre tabindex="0"><code>baseurl = &quot;https://tkmtn.github.io/blog&quot;
+</code></pre><p>とすることで解決したと思ったんだけど、だめだった。トップページ以外のCSSが読み込まれない。</p>
 <h3 id="ビルドとpushの手順">ビルドとpushの手順</h3>
 <ol>
 <li>コンテンツをつくる</li>
@@ -162,7 +162,7 @@ Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうま�
 
 <div class="authorbox clearfix">
 	<figure class="authorbox__avatar">
-		<img alt="つくもたん avatar" src="/img/mirei.png" class="avatar" height="90" width="90">
+		<img alt="つくもたん avatar" src="/blog/img/mirei.png" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
 		<span class="authorbox__name">About つくもたん</span>
@@ -187,8 +187,8 @@ Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうま�
 	</div>
 </footer>
 	</div>
-<script async defer src="/js/menu.js"></script>
-<script src="/js/custom.js"></script>
+<script async defer src="/blog/js/menu.js"></script>
+<script src="/blog/js/custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
 </body>
 </html>

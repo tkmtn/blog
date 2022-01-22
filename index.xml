@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tsukumotan blog</title>
-    <link>https://tkmtn.github.io/</link>
+    <link>https://tkmtn.github.io/blog/</link>
     <description>Recent content on tsukumotan blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 22 Jan 2022 21:08:57 +0900</lastBuildDate><atom:link href="https://tkmtn.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jan 2022 21:08:57 +0900</lastBuildDate><atom:link href="https://tkmtn.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2022/01/22　ブログを開設</title>
-      <link>https://tkmtn.github.io/posts/20220122/</link>
+      <link>https://tkmtn.github.io/blog/posts/20220122/</link>
       <pubDate>Sat, 22 Jan 2022 21:08:57 +0900</pubDate>
       
-      <guid>https://tkmtn.github.io/posts/20220122/</guid>
+      <guid>https://tkmtn.github.io/blog/posts/20220122/</guid>
       <description>2022/01/22 マジでやることがないので日記をつけ始めることにする。 静的サイトジェネレーターのHugoで作ってgithub pagesでホストする。
 知らん人の興味ない投稿が勝手に表示されたりいらん広告勝手に表示されるTwitterとかいうやつやめてみんなで個人サイトを開設しないか？相互リンク募集中です。
 ブログの構築 簡単に Hugo サイトを GitHub Pages で（ 自動ビルドして ）公開する方法
@@ -25,7 +25,7 @@ Hugo 静的サイトジェネレーターによるサイト構築と公開
 解決。
 【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】
 このせいだった。この場合は、config.tomlのbaseURLを
-baseurl = &amp;quot;https://tkmtn.github.io/&amp;quot; とすることで解決した。
+baseurl = &amp;quot;https://tkmtn.github.io/blog&amp;quot; とすることで解決したと思ったんだけど、だめだった。トップページ以外のCSSが読み込まれない。
 ビルドとpushの手順  コンテンツをつくる hugo -Dでビルド Sourcetreeでcommit, push  正直めんどい
 ビルドからpushまで自動化したい、気が向いたら</description>
     </item>
