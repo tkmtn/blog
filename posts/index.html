@@ -33,7 +33,7 @@
 	<div class="container header__container">
 		
 	<div class="logo logo--mixed">
-		<a class="logo__link" href="/blog" title="tsukumotan blog" rel="home">
+		<a class="logo__link" href="/blog/" title="tsukumotan blog" rel="home">
 			<div class="logo__item logo__imagebox">
 					<img class="logo__img" src="/blog/img/mirei.png">
 				</div><div class="logo__item logo__text">
@@ -100,7 +100,8 @@ Hugo 静的サイトジェネレーターによるサイト構築と公開
 解決。
 【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】
 このせいだった。この場合は、config.tomlのbaseURLを
-baseurl = &quot;https://tkmtn.github.io/blog&quot; とすることで解決したと思ったんだけど、だめだった。トップページ以外のCSSが読み込まれない。
+baseurl = &quot;https://tkmtn.github.io/blog/&quot; とすることで解決した。
+これでpushしても治らないように見える場合があるけど、github側でのキャッシュが更新されるまで待つと治った。
 ビルドとpushの手順  コンテンツをつくる hugo -Dでビルド Sourcetreeでcommit, push  正直めんどい
 ビルドからpushまで自動化したい、気が向いたら
 	</div>
@@ -116,7 +117,7 @@ baseurl = &quot;https://tkmtn.github.io/blog&quot; とすることで解決し�
 			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
 		</label>
 		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="https://tkmtn.github.io/blog" />
+		<input type="hidden" name="sitesearch" value="https://tkmtn.github.io/blog/" />
 	</form>
 </div>
 <div class="widget-recent widget">

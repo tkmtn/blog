@@ -25,7 +25,8 @@ Hugo 静的サイトジェネレーターによるサイト構築と公開
 解決。
 【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】
 このせいだった。この場合は、config.tomlのbaseURLを
-baseurl = &amp;quot;https://tkmtn.github.io/blog&amp;quot; とすることで解決したと思ったんだけど、だめだった。トップページ以外のCSSが読み込まれない。
+baseurl = &amp;quot;https://tkmtn.github.io/blog/&amp;quot; とすることで解決した。
+これでpushしても治らないように見える場合があるけど、github側でのキャッシュが更新されるまで待つと治った。
 ビルドとpushの手順  コンテンツをつくる hugo -Dでビルド Sourcetreeでcommit, push  正直めんどい
 ビルドからpushまで自動化したい、気が向いたら</description>
     </item>

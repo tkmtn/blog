@@ -20,7 +20,8 @@ Hugo 静的サイトジェネレーターによるサイト構築と公開
 解決。
 【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】
 このせいだった。この場合は、config.tomlのbaseURLを
-baseurl = &quot;https://tkmtn.github.io/blog&quot; とすることで解決したと思ったんだけど、だめだった。トップページ以外のCSSが読み込まれない。
+baseurl = &quot;https://tkmtn.github.io/blog/&quot; とすることで解決した。
+これでpushしても治らないように見える場合があるけど、github側でのキャッシュが更新されるまで待つと治った。
 ビルドとpushの手順  コンテンツをつくる hugo -Dでビルド Sourcetreeでcommit, push  正直めんどい
 ビルドからpushまで自動化したい、気が向いたら" />
 <meta property="og:type" content="article" />
@@ -42,11 +43,12 @@ Hugo 静的サイトジェネレーターによるサイト構築と公開
 解決。
 【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】
 このせいだった。この場合は、config.tomlのbaseURLを
-baseurl = &quot;https://tkmtn.github.io/blog&quot; とすることで解決したと思ったんだけど、だめだった。トップページ以外のCSSが読み込まれない。
+baseurl = &quot;https://tkmtn.github.io/blog/&quot; とすることで解決した。
+これでpushしても治らないように見える場合があるけど、github側でのキャッシュが更新されるまで待つと治った。
 ビルドとpushの手順  コンテンツをつくる hugo -Dでビルド Sourcetreeでcommit, push  正直めんどい
 ビルドからpushまで自動化したい、気が向いたら"><meta itemprop="datePublished" content="2022-01-22T21:08:57+09:00" />
 <meta itemprop="dateModified" content="2022-01-22T21:08:57+09:00" />
-<meta itemprop="wordCount" content="39">
+<meta itemprop="wordCount" content="40">
 <meta itemprop="keywords" content="" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -65,7 +67,7 @@ baseurl = &quot;https://tkmtn.github.io/blog&quot; とすることで解決し�
 	<div class="container header__container">
 		
 	<div class="logo logo--mixed">
-		<a class="logo__link" href="/blog" title="tsukumotan blog" rel="home">
+		<a class="logo__link" href="/blog/" title="tsukumotan blog" rel="home">
 			<div class="logo__item logo__imagebox">
 					<img class="logo__img" src="/blog/img/mirei.png">
 				</div><div class="logo__item logo__text">
@@ -145,8 +147,9 @@ Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうま�
 <p>解決。</p>
 <p><a href="https://www.nyamucoro.com/entry/2019/05/19/010423">【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】</a></p>
 <p>このせいだった。この場合は、config.tomlのbaseURLを</p>
-<pre tabindex="0"><code>baseurl = &quot;https://tkmtn.github.io/blog&quot;
-</code></pre><p>とすることで解決したと思ったんだけど、だめだった。トップページ以外のCSSが読み込まれない。</p>
+<pre tabindex="0"><code>baseurl = &quot;https://tkmtn.github.io/blog/&quot;
+</code></pre><p>とすることで解決した。</p>
+<p>これでpushしても治らないように見える場合があるけど、github側でのキャッシュが更新されるまで待つと治った。</p>
 <h3 id="ビルドとpushの手順">ビルドとpushの手順</h3>
 <ol>
 <li>コンテンツをつくる</li>
@@ -172,6 +175,29 @@ Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうま�
 	</div>
 </div>
 
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tsukumotan-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
 
 
 			</div>
