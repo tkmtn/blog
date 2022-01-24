@@ -5,18 +5,24 @@
     <link>https://tkmtn.github.io/blog/posts/</link>
     <description>Recent content in Posts on tsukumotan blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 24 Jan 2022 01:21:31 +0900</lastBuildDate><atom:link href="https://tkmtn.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja</language>
+    <lastBuildDate>Mon, 24 Jan 2022 23:03:57 +0900</lastBuildDate><atom:link href="https://tkmtn.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2022年1月24日　コメント欄の追加とarma3</title>
+      <title>20220124</title>
       <link>https://tkmtn.github.io/blog/posts/20220124/</link>
-      <pubDate>Mon, 24 Jan 2022 01:21:31 +0900</pubDate>
+      <pubDate>Mon, 24 Jan 2022 23:03:57 +0900</pubDate>
       
       <guid>https://tkmtn.github.io/blog/posts/20220124/</guid>
-      <description>コメント欄をつけました disqusを使ったコメント欄をつけた。
-方法はdisqusにユーザー登録してhugoのconfig.tomlにdisqusShortname = &amp;quot;&amp;quot;を記述するだけ。
-次は右クリック禁止とアクセスカウンターをつけたい。もちろんキリ番踏み逃げ禁止機能も。
-arma3 夜はロージナとザボットとarma3。</description>
+      <description># アクセスカウンターの設置 Google Cloud Functionsを使ってアクセスカウンターを自作して、ここに設置した。 iframeの中身にスタイルを設定する</description>
+    </item>
+    
+    <item>
+      <title>2022年1月24日　コメント欄の追加とarma3</title>
+      <link>https://tkmtn.github.io/blog/posts/20220123/</link>
+      <pubDate>Sun, 23 Jan 2022 01:21:31 +0900</pubDate>
+      
+      <guid>https://tkmtn.github.io/blog/posts/20220123/</guid>
+      <description>コメント欄をつけました disqusを使ったコメント欄をつけた。 方法はdisqusにユーザー登録してhugoのconfig.tomlにdisq</description>
     </item>
     
     <item>
@@ -25,22 +31,7 @@ arma3 夜はロージナとザボットとarma3。</description>
       <pubDate>Sat, 22 Jan 2022 21:08:57 +0900</pubDate>
       
       <guid>https://tkmtn.github.io/blog/posts/20220122/</guid>
-      <description>2022/01/22 マジでやることがないので日記をつけ始めることにする。 静的サイトジェネレーターのHugoで作ってgithub pagesでホストする。
-知らん人の興味ない投稿が勝手に表示されたりいらん広告勝手に表示されるTwitterとかいうやつやめてみんなで個人サイトを開設しないか？相互リンク募集中です。
-ブログの構築 簡単に Hugo サイトを GitHub Pages で（ 自動ビルドして ）公開する方法
-これを参考に自動でサイトをビルドしてくれるようにしようと思う。
-と思っていたのだが、めんどくさくなったので記事を書く→ビルド→githubにプッシュまでを一つのコマンドにまとめる程度にしておく。とりあえずはメインPCからしか更新できなくなるけど、まあこれでいい。どうせそのうち飽きて更新しなくなるので。
-方針変更 本当はWSL上でやるつもりだったんだけど、なんかWSL上のhugoだとプレビューがうまく行かなかったのでWindowsにHugo入れてやることに。
-Hugo 静的サイトジェネレーターによるサイト構築と公開
-これを参考に環境構築。 Sourcetreeを使ってgithubにpushしてみたけど、なんかpagesでうまく表示されん。謎。
-↓
-解決。
-【Hugo】hugo serverで動くのに、ビルド後は正しく動かないときの対応【582日目】
-このせいだった。この場合は、config.tomlのbaseURLを
-baseurl = &amp;quot;https://tkmtn.github.io/blog/&amp;quot; とすることで解決した。
-これでpushしても治らないように見える場合があるけど、github側でのキャッシュが更新されるまで待つと治った。
-ビルドとpushの手順  コンテンツをつくる hugo -Dでビルド Sourcetreeでcommit, push  正直めんどい
-ビルドからpushまで自動化したい、気が向いたら</description>
+      <description>2022/01/22 マジでやることがないので日記をつけ始めることにする。 静的サイトジェネレーターのHugoで作ってgithub pagesでホストする。 知らん人</description>
     </item>
     
   </channel>
