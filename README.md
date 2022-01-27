@@ -1,3 +1,3 @@
 # blog
 
-![](https://tkmtn.github.io/blog/)
+<https://tkmtn.github.io/blog/>
